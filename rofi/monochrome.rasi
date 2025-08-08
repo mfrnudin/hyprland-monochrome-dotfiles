@@ -1,0 +1,39 @@
+* {
+    background:  #111111FF;
+    border:      2px solid #FFFFFF;
+    border-radius: 8px;
+    padding:     6px;
+    font:        "JetBrainsMono Nerd Font 13";
+    text-color:  #FFFFFFFF;
+    selected:    #FFFFFFFF;
+    background-color: #111111FF;
+}
+window {
+    background-color: @background;
+    border:          2px solid #FFFFFF;
+}
+mainbox {
+    background-color: @background;
+}
+inputbar {
+    background-color: @background;
+    text-color:       #FFFFFFFF;
+    border-radius:    8px;
+}
+listview {
+    background-color: @background;
+    text-color:       #FFFFFFFF;
+    border:           none;
+    border-radius:    8px;
+}
+element {
+    background-color: @background;
+    text-color:       #FFFFFFFF;
+}
+element selected {
+    background-color: #FFFFFF;
+    text-color:       #111111;
+}
+scrollbar {
+    width: 0px;
+}

@@ -1,0 +1,14 @@
+* {
+    color: #fff;
+    background: #111 !important;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    border: none;
+}
+#workspaces button.focused {
+    background: #fff;
+    color: #111;
+}
+#cpu, #memory, #disk, #temperature, #battery, #network, #clock, #pulseaudio, #tray {
+    padding: 0 10px;
+}

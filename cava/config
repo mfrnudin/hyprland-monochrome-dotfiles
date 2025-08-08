@@ -1,0 +1,8 @@
+[general]
+bars = 60
+[output]
+method = ncurses
+[colors]
+background = black
+foreground = white
+gradient = 0

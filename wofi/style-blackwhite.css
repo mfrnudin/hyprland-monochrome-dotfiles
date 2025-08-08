@@ -1,0 +1,12 @@
+window {
+    background-color: #111;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+}
+#entry:selected {
+    background-color: #fff;
+    color: #111;
+}

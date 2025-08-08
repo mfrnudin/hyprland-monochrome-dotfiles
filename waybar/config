@@ -1,0 +1,30 @@
+{
+  "layer": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "cpu",
+    "memory",
+    "disk",
+    "temperature",
+    "battery",
+    "network",
+    "pulseaudio",
+    "tray"
+  ],
+  "cpu": {
+    "format": " {usage}%"
+  },
+  "memory": {
+    "format": " {used:0.1f}G/{total:0.1f}G"
+  },
+  "disk": {
+    "path": "/",
+    "format": " {used}/{total}"
+  },
+  "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    "format": " {temperatureC}°C"
+  }
+}
