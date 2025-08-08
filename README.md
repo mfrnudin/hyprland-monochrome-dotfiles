@@ -15,8 +15,8 @@ Minimalist, solid black-and-white (monochrome) Hyprland setup for a clean and cl
 ## Hotkeys (utama)
 - SUPER + Return: Kitty
 - SUPER + D: Rofi (drun)
-- SUPER + [1..0]: Pindah workspace 1..10
-- SUPER + Shift + [1..0]: Pindah window ke workspace 1..10
+- SUPER + [Number]: Pindah workspace 1..10
+- SUPER + Shift + [Number]: Pindah window ke workspace 1..10
 - SUPER + P: Screenshot area (grimblast)
 
 ## Catatan
