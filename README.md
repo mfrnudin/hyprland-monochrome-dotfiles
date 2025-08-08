@@ -7,14 +7,14 @@ Minimalist, solid black-and-white (monochrome) Hyprland setup for a clean and cl
 1. Install dependencies (adjust to your distro):
    - Hyprland stack: hyprland, waybar, swaybg
    - Apps: kitty, rofi, thunar, cava
-   - Sensors & utils: lm_sensors, udisks2, wl-clipboard, grim, slurp
+   - Sensors & utils: lm_sensors, udisks2, wl-clipboard, grim, slurp, brightnessctl, playerctl
    - Fonts: JetBrainsMono Nerd Font (e.g. `ttf-jetbrains-mono-nerd`)
-   - Optional (used in keybinds): grimblast, waylock/hyprlock
+   - Optional: grimblast, avizo, swaync, wlogout, hypridle, hyprlock, wlsunset
 2. Clone repo & copy config ke `~/.config/` atau jalankan `./auto-setup.sh`
 
 ## Hotkeys (utama)
 - SUPER + Return: Kitty
-- SUPER + D: Rofi (drun)
+- SUPER + D: Rofi (drun) | SUPER + V: Clipboard history
 - SUPER + [1..0]: Pindah workspace 1..10
 - SUPER + Shift + [1..0]: Pindah window ke workspace 1..10
 - SUPER + P: Screenshot area (grimblast)

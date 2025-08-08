@@ -1,0 +1,9 @@
+{
+  "label": "power",
+  "actions": [
+    { "label": "lock", "action": "hyprlock" },
+    { "label": "logout", "action": "hyprctl dispatch exit" },
+    { "label": "reboot", "action": "systemctl reboot" },
+    { "label": "shutdown", "action": "systemctl poweroff" }
+  ]
+}

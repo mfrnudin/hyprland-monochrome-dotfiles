@@ -6,6 +6,7 @@
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": ["clock"],
   "modules-right": [
+    "mpris",
     "cpu",
     "memory",
     "temperature",
@@ -31,7 +32,8 @@
   },
 
   "clock": {
-    "format": " %H:%M   %a, %d %b"
+    "format": " %H:%M   %a, %d %b",
+    "tooltip-format": "<tt>%Y-%m-%d %H:%M:%S</tt>"
   },
 
   "cpu": {
@@ -57,7 +59,8 @@
     "format-wifi": "  {essid} ({signalStrength}%)",
     "format-ethernet": "󰈁 {ipaddr}",
     "format-disconnected": "󰤭  offline",
-    "tooltip": true
+    "tooltip": true,
+    "on-click": "nm-connection-editor"
   },
 
   "pulseaudio": {
@@ -73,7 +76,8 @@
       "car": "󰄋"
     },
     "scroll-step": 3,
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol"
   },
 
   "battery": {
@@ -88,6 +92,17 @@
       "warning": 25,
       "critical": 10
     }
+  },
+
+  "mpris": {
+    "format": "{player_icon} {title}",
+    "format-paused": "{player_icon} {title}",
+    "title-len": 30,
+    "player-icons": {
+      "default": ""
+    },
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next"
   },
 
   "tray": {

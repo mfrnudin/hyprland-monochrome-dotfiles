@@ -1,0 +1,15 @@
+window {
+  background: rgba(17,17,17,0.92);
+}
+button {
+  color: #FFFFFF;
+  background: rgba(24,24,24,0.92);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 8px;
+}
+button:hover {
+  color: #111111;
+  background: #FFFFFF;
+}

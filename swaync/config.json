@@ -1,0 +1,12 @@
+{
+  "position": "top-right",
+  "layer": "overlay",
+  "control-center-width": 380,
+  "control-center-height": 520,
+  "widgets": [
+    "title",
+    "dnd",
+    "mpris",
+    "notifications"
+  ]
+}

@@ -1,0 +1,20 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 12.5px;
+}
+
+window, .control-center, .notification {
+  background: rgba(17,17,17,0.92);
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+.notification .summary { color: #FFFFFF; }
+.notification .body { color: #D0D0D0; }
+
+.widget-title, .widget-dnd, .widget-mpris {
+  background: rgba(24,24,24,0.92);
+  border-radius: 8px;
+  padding: 6px 8px;
+}
