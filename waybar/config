@@ -1,30 +1,97 @@
 {
   "layer": "top",
-  "modules-left": ["hyprland/workspaces"],
+  "position": "top",
+  "height": 0,
+  "spacing": 8,
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": ["clock"],
   "modules-right": [
     "cpu",
     "memory",
-    "disk",
     "temperature",
-    "battery",
+    "disk",
     "network",
     "pulseaudio",
+    "battery",
     "tray"
   ],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "active": "",
+      "urgent": ""
+    }
+  },
+
+  "hyprland/window": {
+    "max-length": 60,
+    "separate-outputs": true
+  },
+
+  "clock": {
+    "format": " %H:%M   %a, %d %b"
+  },
+
   "cpu": {
     "format": " {usage}%"
   },
+
   "memory": {
     "format": " {used:0.1f}G/{total:0.1f}G"
   },
+
+  "temperature": {
+    "critical-threshold": 80,
+    "format": " {temperatureC}°C"
+  },
+
   "disk": {
     "path": "/",
     "format": " {used}/{total}"
   },
-  "temperature": {
-    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-    "critical-threshold": 80,
-    "format": " {temperatureC}°C"
+
+  "network": {
+    "interval": 3,
+    "format-wifi": "  {essid} ({signalStrength}%)",
+    "format-ethernet": "󰈁 {ipaddr}",
+    "format-disconnected": "󰤭  offline",
+    "tooltip": true
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟  muted",
+    "format-icons": {
+      "default": ["󰕾", "󰖀", "󰕿"],
+      "headphones": "󰋋",
+      "handsfree": "󰋎",
+      "headset": "󰋎",
+      "phone": "󰏲",
+      "portable": "󰏲",
+      "car": "󰄋"
+    },
+    "scroll-step": 3,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰚥 {capacity}%",
+    "format-alt": "{time}",
+    "format-icons": [
+      "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
+    ],
+    "states": {
+      "warning": 25,
+      "critical": 10
+    }
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
   }
 }

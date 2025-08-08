@@ -1,0 +1,13 @@
+font=JetBrainsMono Nerd Font 12
+show=drun
+columns=1
+lines=10
+width=45%
+height=40%
+location=center
+matching=fuzzy
+no_actions=true
+hide_scroll=true
+allow_images=false
+term=kitty
+style=~/.config/wofi/style-blackwhite.css
